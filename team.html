@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sudo Sierra</title>
+
+  <meta name="description" content="" />
+  <meta name="theme-color" content="#000" />
+
+  <link rel="stylesheet" href="team.css">
+  <link rel="stylesheet" href="assets/css/fonts.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+  <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Roboto+Flex:opsz,wght@8..144,200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">          </head>
+
+  
+  <div id="globalNav">
+    <div>
+      <ul>
+        <li id="globalNavLogo"><a href="index.html">Home</a></li>
+        <li id="list-fade"><a href="">Partners</a></li>
+        <li id="list-fade"><a href="blog.html">Blog</a></li>
+        <li id="list-fade"><a href=team.html>Team</a></li>
+
+      </ul>
+    </div>
+  </div><div class="container">
+    <div class="text"></div>
+  </div>
+    <div class="container">
+      <h1 data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-duration="1600"
+      data-aos-delay="0"><div class="text"></div></h1>
+      <button><i class="arrow down"></i></button>
+    </div>
+
+  <div class = "page2" data-aos="fade-zoom-in"
+  data-aos-easing="ease-in-back"
+  data-aos-duration="800"
+  data-aos-delay="0">
+    <!--<h2>Our members</h2>-->
+    <div class="float">
+      <div class="innerfloat">
+        <img class = "avatar" src="book.jpeg" alt="Avatar">
+      </div>
+      <div class = "innerfloat1">
+        <h1>Maggotty</h1>
+      </div>
+      <p>Blah blah blah</p>
+    </div>
+    <div class="float1">
+      <div class="innerfloat">
+        <img class = "avatar" src="book.jpeg" alt="Avatar">
+      </div>
+      <div class = "innerfloat1">
+        <h1>Maggotty</h1>
+      </div>
+      <p>Blah blah blah</p>
+    </div>
+    <div class="float" margin-top="20px;">
+      <div class="innerfloat">
+        <img class = "avatar" src="book.jpeg" alt="Avatar">
+      </div>
+      <div class = "innerfloat1">
+        <h1>Maggotty</h1>
+      </div>
+    </div>
+    <div class="float1" margin-top="20px;">
+      <div class="innerfloat">
+        <img class = "avatar" src="book.jpeg" alt="Avatar">
+      </div>
+      <div class = "innerfloat1">
+        <h1>Maggotty</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class = "footer">
+    <hr class = "footerRule"/>
+    <p class = "footerText">Interested in joining? We'd like to hear from you! Shoot us an email at x@sudosierra.com.</p>
+    <p class = "footerText">Sudo Sierra is a non-commercial, ethical hacking team and unaffiliated with any organisations. </p>
+  </div>
+
+  <script>
+    AOS.init();
+
+    window.onscroll = function () { onScroll() };
+
+    function onScroll() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("globalNav").style.backgroundColor = "rgba(0,0,0,0.4)";
+        document.getElementById("globalNav").style.borderBottom = "1px solid rgba(255,255,255, 0.4";
+        document.getElementById("globalNav").style.padding = "20px 0";
+        document.getElementById("globalNavImg").style.height = "20px";
+      }
+
+      else {
+        document.getElementById("globalNav").style.backgroundColor = "rgba(0,0,0,0)";
+        document.getElementById("globalNav").style.border = "none";
+        document.getElementById("globalNav").style.padding = "45px 0";
+        document.getElementById("globalNavImg").style.height = "25px";
+      }
+    }
+
+    if (window.webpage.engine.blink) {
+          window.__forceSmoothscrollAnchorPolyfill__ = true;
+}
+
+  </script>
+  <script>
+      // ——————————————————————————————————————————————————
+// TextScramble
+// ——————————————————————————————————————————————————
+
+class TextScramble {
+  constructor(el) {
+    this.el = el
+    this.chars = '!<>-_\$/[]{}—=+*@^?#_______'
+    this.update = this.update.bind(this)
+  }
+  setText(newText) {
+    const oldText = this.el.innerText
+    const length = Math.max(oldText.length, newText.length)
+    const promise = new Promise((resolve) => this.resolve = resolve)
+    this.queue = []
+    for (let i = 0; i < length; i++) {
+      const from = oldText[i] || ''
+      const to = newText[i] || ''
+      const start = Math.floor(Math.random() * 40)
+      const end = start + Math.floor(Math.random() * 40)
+      this.queue.push({ from, to, start, end })
+    }
+    cancelAnimationFrame(this.frameRequest)
+    this.frame = 0
+    this.update()
+    return promise
+  }
+  update() {
+    let output = ''
+    let complete = 0
+    for (let i = 0, n = this.queue.length; i < n; i++) {
+      let { from, to, start, end, char } = this.queue[i]
+      if (this.frame >= end) {
+        complete++
+        output += to
+      } else if (this.frame >= start) {
+        if (!char || Math.random() < 0.28) {
+          char = this.randomChar()
+          this.queue[i].char = char
+        }
+        output += `<span class="dud">${char}</span>`
+      } else {
+        output += from
+      }
+    }
+    this.el.innerHTML = output
+    if (complete === this.queue.length) {
+      this.resolve()
+    } else {
+      this.frameRequest = requestAnimationFrame(this.update)
+      this.frame++
+    }
+  }
+  randomChar() {
+    return this.chars[Math.floor(Math.random() * this.chars.length)]
+  }
+}
+
+// ——————————————————————————————————————————————————
+// Example
+// ——————————————————————————————————————————————————
+
+const phrases = [
+  'Meet our team',
+  'Maggotty',
+  '9Mile',
+  'GordonTown',
+  'Just 3 individuals',
+  'Capturing the flags',
+  //'winning CTFs.',
+  //'&^29)_)93((@*_)$}$"',
+  //'(@()^%#$"><#>%||$%}?@#%&',
+]
+
+const el = document.querySelector('.text')
+const fx = new TextScramble(el)
+
+let counter = 0
+let count = 0
+const next = () => {
+  if (count % 6 == 5 && count != 0) {
+    fx.setText(phrases[counter]).then(() => {
+    setTimeout(next, 3000)
+    })
+    counter = (counter + 1) % phrases.length
+    count += 1
+  } else {
+    fx.setText(phrases[counter]).then(() => {
+    setTimeout(next, 750)
+    })
+    counter = (counter + 1) % phrases.length
+    count += 1
+  }
+
+}
+
+next()
+  </script>
+
+
+  </body>
+
+</html>

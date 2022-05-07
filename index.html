@@ -1,0 +1,122 @@
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="UTF-8">
+            <title>Sudo Sierra</title>
+
+            <meta name="description" content="" />
+            <meta name="theme-color" content="#000" />
+
+            <link rel="stylesheet" href="index.css">
+            <link rel="stylesheet" href="assets/css/fonts.css"> 
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+            <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
+
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Roboto+Flex:opsz,wght@8..144,200&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">          </head>
+
+              <div id="globalNav">
+                <div>
+                  <ul>
+                    <!--<li id="globalNavLogo"><a href="index.html"><img id="globalNavImg"
+                          src="https://cdn.discordapp.com/avatars/901455319484481596/8e5941fd4dfdcee9f7ba9c81f3c692a6.webp?size=480"></a></li>-->
+                    <li id="globalNavLogo"><a herf=index.html>Home</a></li>
+                    <li id="list-fade"><a href="">Partners</a></li>
+                    <li id="list-fade"><a href="blog.html">Blog</a></li>
+                    <li id="list-fade"><a href=team.html>Team</a></li>
+
+                  </ul>
+                </div>
+              </div>
+                <div class="float">
+                  <h1 data-aos="fade-zoom-in"
+                  data-aos-easing="ease-in-back"
+                  data-aos-duration="1600"
+                  data-aos-delay="0">Hi, we're <a>Sudo Sierra</a></h1>
+                  <h4 class= "line-1 anim-typewriter">And we're more than just a <a>CTF group</a>.</h4>
+                  <button>FIND OUT MORE ➟</button>
+                </div>
+                <div class="float1">
+                  <img class = "right" src="arrows.gif"/>
+                </div>
+              
+            <div class = "page">
+              <!--
+              <hr/>
+                <p>Recent CTF: 14th in <a>Digital Overdose Conference CTF</a></p>
+              <hr/>-->
+              <div class="float-page">
+                <h1 data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-duration="1000">Who are we?</h1>
+                <h4 data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-duration="1000">We are a group of young and passionate Australian CTF team. Established in late 2021, we've only been in the game for a short time but we are a high achieving team.</h4>
+              </div>
+              <div class="float-page1">
+                <img class = "right" src="hacker.png"/>
+                CTFTIME WORLD: 131      |      CTFTIME COUNTRY: 3
+              </div>
+
+              <hr id = "separate" color="black"/>
+
+              <div class = "page2" data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-duration="800"
+              data-aos-delay="0">
+                <h2 >Blog</h2>
+                <h5>30th Apr - AngstromCTF</h5>
+                <p></p>
+                <h5>30th Apr - Digital Overdose Conference CTF</h5>
+                <p>14th place</p>
+                <h5>23rd Apr - CUCTF 1.0</h5>
+                <p></p>
+                <h5>12th Mar - UTCTF</h5>
+                <p></p>
+                <h5>5th Mar - EngineerCTF</h5>
+                <p></p>
+              </div>
+            </div>
+            <div class = "footer">
+              <hr class = "footerRule"/>
+              <p class = "footerText">Interested in joining? We'd like to hear from you! Shoot us an email at x@sudosierra.com.</p>
+              <p class = "footerText">Sudo Sierra is a non-commercial, ethical hacking team and unaffiliated with any organisations. </p>
+            </div>
+
+
+            <script>
+              AOS.init();
+
+              window.onscroll = function () { onScroll() };
+
+              function onScroll() {
+                if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                  document.getElementById("globalNav").style.backgroundColor = "rgba(0,0,0,0.4)";
+                  document.getElementById("globalNav").style.borderBottom = "1px solid rgba(255,255,255, 0.4";
+                  document.getElementById("globalNav").style.padding = "20px 0";
+                  document.getElementById("globalNavImg").style.height = "20px";
+                }
+
+                else {
+                  document.getElementById("globalNav").style.backgroundColor = "rgba(0,0,0,0)";
+                  document.getElementById("globalNav").style.border = "none";
+                  document.getElementById("globalNav").style.padding = "45px 0";
+                  document.getElementById("globalNavImg").style.height = "25px";
+                }
+              }
+
+              if (window.webpage.engine.blink) {
+                    window.__forceSmoothscrollAnchorPolyfill__ = true;
+          }
+
+            </script>
+
+
+            </body>
+
+          </html>
