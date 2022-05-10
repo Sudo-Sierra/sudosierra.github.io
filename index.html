@@ -14,7 +14,7 @@
             <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
             <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
             <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
-
+            <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto&display=swap" rel="stylesheet">
             <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Roboto+Flex:opsz,wght@8..144,200&display=swap" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@
                     <!--<li id="globalNavLogo"><a href="index.html"><img id="globalNavImg"
                           src="https://cdn.discordapp.com/avatars/901455319484481596/8e5941fd4dfdcee9f7ba9c81f3c692a6.webp?size=480"></a></li>-->
                     <li id="globalNavLogo"><a herf=index.html>Home</a></li>
-                    <li id="list-fade"><a href="">Partners</a></li>
+                    <li id="list-fade"><a href="partners.html">Partners</a></li>
                     <li id="list-fade"><a href="blog.html">Blog</a></li>
                     <li id="list-fade"><a href=team.html>Team</a></li>
 
@@ -34,12 +34,9 @@
                 </div>
               </div>
                 <div class="float">
-                  <h1 data-aos="fade-zoom-in"
-                  data-aos-easing="ease-in-back"
-                  data-aos-duration="1600"
-                  data-aos-delay="0">Hi, we're <a>Sudo Sierra</a></h1>
-                  <h4 class= "line-1 anim-typewriter">And we're more than just a <a>CTF group</a>.</h4>
-                  <button>FIND OUT MORE ➟</button>
+                  <h2 class= "line-1 anim-typewriter">Hi, we're <a>Sudo Sierra</a></h2>
+                  <h4 class= "line-2 anim-typewriter1">And we are more than just a <a>CTF group</a>.</h4>
+                  <button class = "fade-in">FIND OUT MORE ➟</button>
                 </div>
                 <div class="float1">
                   <img class = "right" src="arrows.gif"/>
@@ -56,32 +53,49 @@
                 data-aos-duration="1000">Who are we?</h1>
                 <h4 data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
-                data-aos-duration="1000">We are a group of young and passionate Australian CTF team. Established in late 2021, we've only been in the game for a short time but we are a high achieving team.</h4>
+                data-aos-duration="1000">We are a young and passionate Australian CTF team. Established in late 2021, we have only been in the game for a short time but that has never stopped anyone, and definitely not us.</h4>
               </div>
-              <div class="float-page1">
-                <img class = "right" src="hacker.png"/>
-                CTFTIME WORLD: 131      |      CTFTIME COUNTRY: 3
+              <div class="float-page1" data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-duration="1200">
+                <img class = "right" src = "ctflogo.png">
+                <br/>
+                <p>WORLD RANK: 131<sup>st</sup></p>
+                <p>COUNTRY RANK: 3<sup>rd</sup></p>
               </div>
 
-              <hr id = "separate" color="black"/>
-
+              <!--<hr id = "separate" color="black"/>-->
+              
               <div class = "page2" data-aos="fade-zoom-in"
               data-aos-easing="ease-in-back"
               data-aos-duration="800"
               data-aos-delay="0">
-                <h2 >Blog</h2>
-                <h5>30th Apr - AngstromCTF</h5>
-                <p></p>
-                <h5>30th Apr - Digital Overdose Conference CTF</h5>
-                <p>14th place</p>
-                <h5>23rd Apr - CUCTF 1.0</h5>
-                <p></p>
-                <h5>12th Mar - UTCTF</h5>
-                <p></p>
-                <h5>5th Mar - EngineerCTF</h5>
-                <p></p>
+                <!--<h2>Blog</h2>-->
+                <hr color = "#040910"/>
+                <h5>EZCTF: All writeups</h5>
+                <p>7 May 2022</p>
+                <h6>As demonstrated by the name, this CTF was easy. But that wasn't the only thing, it was also guessy. Further - 
+                  and not due to the organisers - the top few teams were colluding and upon their ban, they released the flags
+                   to everyone in the discord. 
+                </h6>
+                <hr color = "grey"/>
+                <h5>AngstromCTF: All writeups</h5>
+                <p>30 April 2022</p>
+                <h6>We didn't pay much attention to this CTF, as we were doing DOCCTF (below), but we got 10+ ctftime rating from this
+                  event so felt this was worthy of a writeup. 
+                </h6>
+                <hr color = "grey"/>
+                <h5>Digital Overdose Conference CTF: All writeups</h5>
+                <p>30 April 2022</p>
+                <h6></h6>
+                <hr color = "grey"/>
+                <h5>CUCTF 1.0: All writeups</h5>
+                <p>23 April 2022</p>
+                <h6></h6>
               </div>
+              <p id = "linkToBlogs"><a href = "blog.html">Read More →</a></p>
             </div>
+            
             <div class = "footer">
               <hr class = "footerRule"/>
               <p class = "footerText">Interested in joining? We'd like to hear from you! Shoot us an email at x@sudosierra.com.</p>

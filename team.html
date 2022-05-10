@@ -25,7 +25,7 @@
     <div>
       <ul>
         <li id="globalNavLogo"><a href="index.html">Home</a></li>
-        <li id="list-fade"><a href="">Partners</a></li>
+        <li id="list-fade"><a href="partners.html">Partners</a></li>
         <li id="list-fade"><a href="blog.html">Blog</a></li>
         <li id="list-fade"><a href=team.html>Team</a></li>
 
@@ -44,7 +44,7 @@
 
   <div class = "page2" data-aos="fade-zoom-in"
   data-aos-easing="ease-in-back"
-  data-aos-duration="800"
+  data-aos-duration="500"
   data-aos-delay="0">
     <!--<h2>Our members</h2>-->
     <div class="float">
@@ -54,32 +54,36 @@
       <div class = "innerfloat1">
         <h1>Maggotty</h1>
       </div>
-      <p>Blah blah blah</p>
+
+      <p class = "right">Experienced in cryptography, but main OSINT and scripting.
+      </p>
     </div>
     <div class="float1">
       <div class="innerfloat">
-        <img class = "avatar" src="book.jpeg" alt="Avatar">
+        <img class = "avatar" src="gordonTown.webp" alt="Avatar">
       </div>
       <div class = "innerfloat1">
-        <h1>Maggotty</h1>
+        <h1>GordonTown</h1>
       </div>
-      <p>Blah blah blah</p>
+      <p class = "right">Main crypto. Experienced in OSINT, and machine learning.</p>
     </div>
     <div class="float" margin-top="20px;">
       <div class="innerfloat">
-        <img class = "avatar" src="book.jpeg" alt="Avatar">
+        <img class = "avatar" src="levelled.webp" alt="Avatar">
       </div>
       <div class = "innerfloat1">
-        <h1>Maggotty</h1>
+        <h1>9Mile</h1>
       </div>
+      <p class = "right">Steganography, forensics and miscellaneous main.</p>
     </div>
     <div class="float1" margin-top="20px;">
       <div class="innerfloat">
-        <img class = "avatar" src="book.jpeg" alt="Avatar">
+        <img class = "avatar" src="newguy.webp" alt="Avatar">
       </div>
       <div class = "innerfloat1">
-        <h1>Maggotty</h1>
+        <h1>NewGuyInTown</h1>
       </div>
+      <p class = "right">Reverse engineering main, experienced in pwn.</p>
     </div>
   </div>
 
@@ -183,8 +187,9 @@ const phrases = [
   'Maggotty',
   '9Mile',
   'GordonTown',
-  'Just 3 individuals',
-  'Capturing the flags',
+  'NewGuyInTown',
+  //'Just 3 individuals',
+  //'Capturing the flags',
   //'winning CTFs.',
   //'&^29)_)93((@*_)$}$"',
   //'(@()^%#$"><#>%||$%}?@#%&',
@@ -196,15 +201,15 @@ const fx = new TextScramble(el)
 let counter = 0
 let count = 0
 const next = () => {
-  if (count % 6 == 5 && count != 0) {
+  if (count % 5 == 4 && count != 0) {
     fx.setText(phrases[counter]).then(() => {
-    setTimeout(next, 3000)
+    setTimeout(next, 4000)
     })
     counter = (counter + 1) % phrases.length
     count += 1
   } else {
     fx.setText(phrases[counter]).then(() => {
-    setTimeout(next, 750)
+    setTimeout(next, 500)
     })
     counter = (counter + 1) % phrases.length
     count += 1

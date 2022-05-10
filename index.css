@@ -30,17 +30,24 @@ a {
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
     font-style: bold;
+    font-family: 'Roboto Flex', sans-serif;
 }
 
 #globalNav > div {
     margin: auto;
     max-width: 1700px;
+
 }
 
 #globalNavImg {
     height: 25px;
     opacity: 100%;
     transition: opacity 1.5s;
+}
+
+#globalNavLogo {
+  animation: fade 1s steps(40) 6.4s 1 normal both;
+  float: left;
 }
 
 #globalNavImg:hover {
@@ -52,6 +59,7 @@ a {
 #list-fade {
     opacity: 100%;
     transition: opacity 1.5s;
+    animation: fade 1s steps(40) 6.4s 1 normal both;
 }
 
 #list-fade:hover {
@@ -99,8 +107,7 @@ ul {
   }
 
 
-.float h1 {
-    padding-top: 15%;
+.float h2 {
     font-size: 96px;
     font-family: 'Roboto Flex', sans-serif;
     padding-bottom: 0%;
@@ -141,8 +148,6 @@ ul {
 .right {
   width: 80%;
   height: auto;
-  float: right;
-  padding-right: 16%;
 }
 
 .float button {
@@ -164,6 +169,7 @@ ul {
 
   .page {
         margin-top: 50%;
+        margin-bottom: 20%;
   }
 
   .page p {
@@ -202,10 +208,17 @@ ul {
 
   .float-page1 {
     padding-top: 24%;
-    width: 25%;
+    width: 20%;
     float: right;
     padding-right: 10%;
     font-family: 'Rubik', sans-serif;
+    text-align: center;
+    padding-bottom: 0%;
+  }
+
+  .float-page1 p {
+    font-family: 'Roboto', sans-serif;
+
   }
 
   /* Google Fonts */
@@ -214,17 +227,28 @@ ul {
 /* Global */
 .line-1{
     position: relative;
-    top: 50%;  
+    top: 20%;  
     width: 24em;
-    margin-top: 10px;
+    margin-top: 25%;
     border-right: 1px solid rgba(255,255,255,.75);
     font-size: 180%;
     text-align: left;
     white-space: nowrap;
     overflow: hidden;
-    padding-top: 10px;
     transform: translateY(-25%);    
-    padding-top: 5em;
+    padding: 0px;
+}
+
+.line-2{
+  position: relative;
+  top: 50%;  
+  width: 24em;
+  border-right: 1px solid rgba(255,255,255,0);
+  font-size: 180%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-25%);    
 
 }
 
@@ -235,14 +259,27 @@ ul {
 
 /* Animation */
 .anim-typewriter{
-  animation: typewriter 2s steps(40) 2s 1 normal both,
-             blinkTextCursor 500ms steps(30) infinite normal;
+  animation: typewriter 2s steps(40) 0.5s 1 normal both,
+             blinkTextCursor 750ms steps(30) 4 normal both;
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 13.3em;}
+  to{width: 7em;}
 }
 @keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+.anim-typewriter1{
+  animation: typewriter1 2s steps(40) 3.5s 1 normal both,
+             blinkTextCursor1 500ms steps(30) 3.5s infinite normal;
+}
+@keyframes typewriter1{
+  from{width: 0;}
+  to{width: 13.75em;}
+}
+@keyframes blinkTextCursor1{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
@@ -261,15 +298,21 @@ ul {
 .page h5 {
   text-align: left;
   padding-top: 8px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
   padding-left: 20%;
-  font-size: 24px;
+  font-size: 28px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
 }
 
 .page2 p {
   color: grey;
   text-align: left;
   padding-left: 20%;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
+  font-family: 'Roboto Flex', sans-serif;  
+  font-size: 16px;
 }
 
 .footerText {
@@ -283,3 +326,55 @@ ul {
   height: 0.1px;
   background-color: white;
 }
+
+.float button {
+  opacity: 0;
+}
+
+@keyframes fade{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+.fade-in{
+  animation: fade 1s steps(40) 6.4s 1 normal both;
+}
+
+
+.innerfloat {
+  float: left;
+  width: 60%;
+  border: 2px solid red;
+}
+
+.innerfloat1 {
+  float: left;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.float-page1 sup {
+  color: rgb(56,120,145);
+}
+
+.page2 hr {
+  width: 60%;
+  color: black;
+}
+
+.page2 h6 {
+  color: white;
+  font-size: 16px;
+  font-family: 'Roboto Flex', sans-serif;   
+  text-align: left;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-top: 20px;
+}
+
+#linkToBlogs {
+  color: rgb(56,120,145);
+  float: left;
+  padding-left: 20%;
+}
+

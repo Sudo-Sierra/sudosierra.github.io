@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sudo Sierra</title>
+  <meta name="theme-color" content="#000" />
+
+  <link rel="stylesheet" href="blogFormat.css">
+  <link rel="stylesheet" href="assets/css/fonts.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+  <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Roboto+Flex:opsz,wght@8..144,200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/path/to/styles/default.min.css">
+    <script src="/path/to/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+  
+  <div id="globalNav">
+    <div>
+      <ul>
+        <li id="globalNavLogo"><a href="index.html">Home</a></li>
+        <li id="list-fade"><a href="partners.html">Partners</a></li>
+        <li id="list-fade"><a href="blog.html">Blog</a></li>
+        <li id="list-fade"><a href=team.html>Team</a></li>
+
+      </ul>
+    </div>
+</div>
+
+  <div class = "intro">
+      <h1>sudoCTF: Selected writeups</h1>
+  </div>
+
+  <div class="page">
+      <hr/>
+      <br/>
+      <h1>Skyline: 200 points</h1>
+      <button class = "category">Steganography</button>
+      <div class="challenge">
+          <p><i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</i></p>
+      </div>
+      <p class="pageText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <img class="pageImg" src = "chameleon.webp">
+      <p class="pageText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+      <pre><code class="python"># Python Program to calculate the square root
+
+# Note: change this value for a different result
+num = 8 
+
+# To take the input from the user
+#num = float(input('Enter a number: '))
+
+num_sqrt = num ** 0.5
+print('The square root of %0.3f is %0.3f'%(num ,num_sqrt))
+    </code></pre>
+
+    <p class="pageText">And that's our flag: <a>sudoCTF{n1ce_w0rk}</a></p>
+
+    </div>
+
+
+
+  <div class = "footer">
+    <hr class = "footerRule"/>
+    <p class = "footerText">Interested in joining? We'd like to hear from you! Shoot us an email at x@sudosierra.com.</p>
+    <p class = "footerText">Sudo Sierra is a non-commercial, ethical hacking team and unaffiliated with any organisations. </p>
+  </div>
+
+  <script>
+    AOS.init();
+
+    window.onscroll = function () { onScroll() };
+
+    function onScroll() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("globalNav").style.backgroundColor = "rgba(0,0,0,0.4)";
+        document.getElementById("globalNav").style.borderBottom = "1px solid rgba(255,255,255, 0.4";
+        document.getElementById("globalNav").style.padding = "20px 0";
+        document.getElementById("globalNavImg").style.height = "20px";
+      }
+
+      else {
+        document.getElementById("globalNav").style.backgroundColor = "rgba(0,0,0,0)";
+        document.getElementById("globalNav").style.border = "none";
+        document.getElementById("globalNav").style.padding = "45px 0";
+        document.getElementById("globalNavImg").style.height = "25px";
+      }
+    }
+
+    if (window.webpage.engine.blink) {
+          window.__forceSmoothscrollAnchorPolyfill__ = true;
+}
+
+  </script>
+
+  </body>
+
+</html>
