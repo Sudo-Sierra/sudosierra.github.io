@@ -189,6 +189,7 @@ const phrases = [
   '9Mile',
   'GordonTown',
   'NewGuyInTown',
+  'Team Slash'
   //'Just 3 individuals',
   //'Capturing the flags',
   //'winning CTFs.',
@@ -202,9 +203,9 @@ const fx = new TextScramble(el)
 let counter = 0
 let count = 0
 const next = () => {
-  if (count % 5 == 4 && count != 0) {
+  if (count % 6 == 5 && count != 0) {
     fx.setText(phrases[counter]).then(() => {
-    setTimeout(next, 4000)
+    setTimeout(next, 100000)
     })
     counter = (counter + 1) % phrases.length
     count += 1

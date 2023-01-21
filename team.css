@@ -1,10 +1,15 @@
 html, body {
-  font-family: MundoSans, Helvetica, serif;
+  font-family: Visby-semibold;
   margin: 0px;
   padding: 0px;
   font-weight: 400;
   scroll-behavior: smooth;
   background-color: #040910;
+}
+
+@font-face {
+  font-family: Visby-semibold;
+  src: url(Fontspring-DEMO-visbycf-demibold.otf)
 }
 .container{
   height: 100%;
@@ -18,7 +23,7 @@ html, body {
 .text{
     padding-top: 25%;
     font-size: 96px;
-    font-family: 'Roboto Flex', sans-serif;
+    font-family: Visby-semibold;
     padding-bottom: 0%;
     margin-bottom: 0%;
     text-align: center;
@@ -50,9 +55,9 @@ a {
     z-index: 10;
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
-    font-style: bold;
-    font-family: 'Roboto Flex', sans-serif;
-}
+    font-family: Visby-semibold;
+    font-weight: 400;
+  }
 
 #globalNav > div {
     margin: auto;
@@ -150,20 +155,18 @@ ul {
 }
 
 .float1 {
-    width: 40%;
-    margin-right: 8%;
+    width: 48%;
     float: right;
     border: 2px solid rgb(56,120,145);
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: left;
     margin-bottom: 30px;
 }
 .float {
-  width: 40%;
-  margin-left: 8%;
+  width: 48%;
   float: left;
   border: 2px solid rgb(56,120,145);
-  border-radius: 20px;
+  border-radius: 10px;
   text-align: left;
   padding: 0px;
   margin-bottom: 30px;
@@ -294,10 +297,12 @@ ul {
 }
 
 .page2 {
-  margin-top: 20%;
+  position: absolute;
+  top: 100%;
   color: white;
-  font-family: 'Roboto Flex', sans-serif; 
-  padding-bottom: 40%;
+  font-family: Visby-semibold;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .page h5 {
@@ -315,14 +320,16 @@ ul {
 }
 
 .footer {
-  margin-top: 8%;
+  position: absolute;
+  top: 180%;
+  width: 100%;
 }
 
 .footerText {
-  color: grey;
-  font-size: 16px;
-  font-family: 'Roboto Flex', sans-serif;    
+  color: rgb(180, 180, 180);
+  font-size: 16px;  
   text-align: center;
+  width: 100%;
 }
 
 .footerRule {
