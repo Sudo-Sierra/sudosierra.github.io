@@ -1,5 +1,5 @@
 html, body {
-  font-family: Visby-semibold;
+  font-family: Visby-emibold;
   margin: 0px;
   padding: 0px;
   font-weight: 400;
@@ -55,8 +55,8 @@ a {
     z-index: 10;
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
-    font-family: Visby-semibold;
-    font-weight: 400;
+    font-family: 'Gantari', sans-serif;
+
   }
 
 #globalNav > div {
@@ -213,8 +213,8 @@ ul {
   .page p {
       font-size: 18px;
       color: white;
-      font-family: 'Roboto Flex', sans-serif;
-  }
+      font-family: 'Gantari', sans-serif;
+      }
 
   .page a {
     color: rgb(56,120,145);
@@ -313,23 +313,26 @@ ul {
 }
 
 .page2 p {
-  color: grey;
+  color: rgb(202, 202, 202);
   text-align: left;
   padding-left: 20%;
   padding-bottom: 20px;
+  font-family: 'Gantari', sans-serif;
 }
 
 .footer {
   position: absolute;
-  top: 180%;
+  top: 200%;
   width: 100%;
+  border-top: 0.1px solid white;
 }
 
 .footerText {
-  color: rgb(180, 180, 180);
+  color: white;
   font-size: 16px;  
   text-align: center;
   width: 100%;
+  font-family: 'Gantari', sans-serif;
 }
 
 .footerRule {

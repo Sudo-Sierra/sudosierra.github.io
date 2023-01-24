@@ -23,8 +23,6 @@ a {
     padding: 45px 0;
     margin: auto;
     transition: 0.3s;
-    top: 0;
-    position: sticky;
     height: 20px;
     background-color: rgba(0,0,0,0);
     z-index: 10;
@@ -291,6 +289,8 @@ ul {
   position: absolute;
   top: 300%;
   width: 100%;
+  border-top: 0.1px solid white;
+
 }
 
 .footerText {
@@ -298,6 +298,7 @@ ul {
   font-size: 16px;  
   text-align: center;
   width: 100%;
+  font-family: 'Gantari', sans-serif;
 }
 
 .footerRule {
